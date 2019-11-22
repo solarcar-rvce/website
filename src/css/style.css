@@ -1,0 +1,337 @@
+body {
+    background-color: black
+}
+
+.img {
+    float: left;
+    height: 95px;
+    width: 115px;
+    animation: titleanime 0.8s linear;
+}
+
+.title {
+    float: right;
+    color: dodgerblue;
+    letter-spacing: 6px;
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    animation: titleanime 0.8s linear;
+}
+
+.svg {
+    float: right;
+    padding: 18px;
+    animation: titleanime 0.8s linear
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    opacity: 0.975;
+    overflow-x: hidden;
+    padding-top: 60px;
+    float: right;
+    transition: 0.7s;
+    z-index: -1;
+}
+
+.side-nav a {
+    text-decoration: none;
+}
+
+.link {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 25px 50px 10px 10px;
+    text-decoration: none;
+    font-size: 27px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+    text-align: right
+}
+
+.link:hover {
+    font-size: 30px;
+    color: beige;
+}
+
+.side-nav .bttn-close {
+    position: absolute;
+    top: 0;
+    left: 22px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+#main {
+    position: static;
+    transition: margin-left 0.7s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: center;
+    right: 10px;
+    cursor: pointer;
+}
+
+.stick {
+    width: 40px;
+    height: 5px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    background-color: #2dfdb9;
+    display: inline-block;
+}
+
+.stick:last-child {
+    margin-bottom: 0px;
+}
+
+.stick-1.open {
+    animation: stick-1-open 0.6s ease-out forwards;
+}
+
+.stick-2.open {
+    animation: stick-2-open 0.6s linear forwards;
+}
+
+.stick-3.open {
+    animation: stick-3-open 0.6s linear forwards;
+}
+
+@keyframes stick-1-open {
+    0% {
+        width: 40px;
+    }
+    40% {
+        background-color: #ff1456;
+        width: 4px;
+        transform: translate(20px, 0px);
+    }
+    75%,
+    80% {
+        width: 4px;
+        transform: translate(20px, -25px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    100% {
+        background-color: #ff1456;
+        width: 4px;
+        transform: translate(25px, 36px);
+    }
+}
+
+@keyframes stick-2-open {
+    80% {
+        background-color: #2dfdb9;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        background-color: #143fff;
+        transform: translate(8px, 0px) rotate(40deg);
+    }
+}
+
+@keyframes stick-3-open {
+    80% {
+        background-color: #2dfdb9;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        background-color: #143fff;
+        transform: translate(4px, -12px) rotate(-40deg);
+    }
+}
+
+.stick-1.close {
+    width: 4px;
+    transform: translate(17px, 16px);
+    animation: stick-1-close 0.6s ease-out forwards;
+}
+
+.stick-2.close {
+    transform: translate(0px, 0px) rotate(40deg);
+    animation: stick-2-close 0.6s ease-out forwards;
+}
+
+.stick-3.close {
+    transform: translate(0px, -23px) rotate(-40deg);
+    animation: stick-3-close 0.6s ease-out forwards;
+}
+
+@keyframes stick-1-close {
+    0%,
+    70% {
+        width: 0px;
+    }
+    100% {
+        width: 40px;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes stick-2-close {
+    0% {
+        background-color: #143fff;
+        width: 40px;
+    }
+    20% {
+        background-color: #143fff;
+        width: 4px;
+        transform: translate(0, 0px) rotate(40deg);
+    }
+    40% {
+        background-color: #2dfdb9;
+        width: 0px;
+    }
+    65% {
+        transform: translate(0, -70px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    80% {
+        width: 0px;
+    }
+    100% {
+        width: 40px;
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes stick-3-close {
+    0% {
+        background-color: #143fff;
+        width: 40px;
+    }
+    20% {
+        background-color: #143fff;
+        width: 4px;
+        transform: translate(0, -23px) rotate(-40deg);
+    }
+    40% {
+        background-color: #2dfdb9;
+    }
+    65% {
+        transform: translate(0, -93px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    90% {
+        width: 4px;
+    }
+    100% {
+        width: 40px;
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes titleanime {
+    0% {
+        letter-spacing: 40px;
+        opacity: 0;
+    }
+    50% {
+        letter-spacing: 25px;
+        opacity: 0.5;
+    }
+}
+
+.page {
+    position: inherit;
+    height: inherit;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.page::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #0D0D0D;
+}
+
+.footer-div1 {
+    margin-top: 7px;
+    margin-left: 30px;
+    float: left;
+}
+
+.footer-ul {
+    list-style-type: none;
+}
+
+.footer-li {
+    padding: 17px;
+    display: block;
+    margin: 0 10px;
+}
+
+.footer-a {
+    margin: 100px;
+    padding: 40px;
+    text-decoration: none;
+    color: darkgrey;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-a:hover {
+    color: #143fff;
+    font-weight: 500;
+}
+
+.footer-div2 {
+    margin-top: 10px;
+    margin-right: 200px;
+    float: right;
+}
+
+.footer-p1 {
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.footer-p2 {
+    margin-top: -20px;
+    margin-bottom: 25px;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}

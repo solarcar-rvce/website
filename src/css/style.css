@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black
 }
@@ -20,6 +25,7 @@ body {
     font-size: 27px;
     font-weight: 600;
     animation: titleanime 0.8s linear;
+    text-shadow: 1px 1px 1px black;
 }
 
 .svg {
@@ -66,7 +72,7 @@ body {
     color: #ccc;
     display: block;
     transition: 0.3s;
-    text-align: right
+    text-align: right;
 }
 
 .link:hover {
@@ -282,16 +288,14 @@ body {
     width: 100%;
     height: 300px;
     background-color: #0D0D0D;
-}
-
-.footer-div1 {
-    margin-top: 7px;
-    margin-left: 30px;
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-ul {
     list-style-type: none;
+    margin-left: 100%;
 }
 
 .footer-li {
@@ -301,8 +305,6 @@ body {
 }
 
 .footer-a {
-    margin: 100px;
-    padding: 40px;
     text-decoration: none;
     color: darkgrey;
     font-weight: 100;
@@ -315,9 +317,7 @@ body {
 }
 
 .footer-div2 {
-    margin-top: 10px;
-    margin-right: 200px;
-    float: right;
+    width: 29%;
 }
 
 .footer-p1 {
@@ -329,7 +329,6 @@ body {
 }
 
 .footer-p2 {
-    margin-top: -20px;
     margin-bottom: 25px;
     color: antiquewhite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

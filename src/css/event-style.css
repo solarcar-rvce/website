@@ -1,9 +1,100 @@
+.event-page {
+    background-image: url("../assets/testbg4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 105%;
+    background-attachment: fixed;
+    text-shadow: 2px 2px 2px black;
+}
+
 .bwsc {
-    display: block;
-    margin-top: 90px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    height: 600px;
+    width: 95%;
+    z-index: 100;
+}
+
+.arka {
+    position: absolute;
+    top: 30%;
+    left: 11%;
     height: 550px;
     width: 80%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.content-wsc {
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-wsc-parah {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wsc-h {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: chocolate;
+    margin-bottom: 5%;
+}
+
+.content-wsc-p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: cornflowerblue;
+    text-align: justify;
+    margin-right: 10%;
+    font-weight: 100;
+}
+
+.content-wsc-img {
+    height: 100%;
+    width: 55%;
+}
+
+.content-sasol {
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-div-parah {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-sasol-h {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: chocolate;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+
+.content-sasol-p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: cornflowerblue;
+    text-align: justify;
+    margin-left: 10%;
+}
+
+.content-sasol-img {
+    height: 100%;
+    width: 60%;
 }

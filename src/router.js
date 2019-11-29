@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './components/Home'
 import About from './components/About'
+import Car from './components/Car'
 import Sponsors from './components/Sponsors'
 import Contact from './components/Contact'
 import Events from './components/Events'
@@ -23,6 +24,11 @@ export default new Router({
             path: '/gallery',
             name: 'Gallery',
             beforeEnter() { location.href = 'https://www.flickr.com/photos/154038345@N08/albums' }
+        },
+        {
+            path: '/cars',
+            name: 'Cars',
+            component: Car,
         },
         {
             path: '/sponsors',

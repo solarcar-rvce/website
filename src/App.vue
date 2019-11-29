@@ -14,11 +14,12 @@
           </a>
         </span>
         <div id="side-menu" class="side-nav" v-on:click='closeSlideMenu'>
-          <hr style="margin-top:50px; width:700px; margin-right:20px"/>
+          <hr style="margin-top:50px; width:700px; margin-left:50%"/>
           <router-link class="link" to="/">Home</router-link>
           <router-link class="link" to="/about">About</router-link>
           <router-link class="link" to="/gallery">Gallery</router-link>
           <router-link class="link" to="/sponsors">Sponsors</router-link>
+          <router-link class="link" to="/cars">Cars</router-link>
           <router-link class="link" to="/events">Events</router-link>
           <router-link class="link" to="/contact">Contact Us</router-link>
         </div>
@@ -26,18 +27,18 @@
       <router-view/>
     </div>
     <footer class="footer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-        <div class="footer-div1">
-          <ul class="footer-ul" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div>
+          <ul class="footer-ul" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
             <li class="footer-li"><a class="footer-a" target="#" href="https://twitter.com/solarcar_rvce?lang=en">Twitter</a></li>
             <li class="footer-li"><a class="footer-a" target="#" href="https://www.facebook.com/solarcar.rvce/">Facebook</a></li>
             <li class="footer-li"><a class="footer-a" target="#" href="https://www.instagram.com/rvcesolarcarteam/">Instagram</a></li>
             <li class="footer-li"><a class="footer-a" target="#" href="https://www.youtube.com/channel/UCMHROnqYdjiCgHR3YkGoXZQ">YouTube</a></li>
           </ul>
         </div>
-        <div class="footer-div2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="footer-div2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
           <p class="footer-p1">RVCE Solar Car Team</p>
           <p class="footer-p2">Racing Towards Infinity...</p>
-          <img src="./assets/rvce-logo.png" alt="rvce-logo" height="120px" width="120px">
+          <img src="./assets/rvce-logo1.png" alt="rvce-logo" height="120px" width="120px">
         </div>
       </footer>
     </div>
